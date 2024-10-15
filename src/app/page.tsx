@@ -1,113 +1,170 @@
-import Image from "next/image";
+"use client";
+import { useRef } from "react";
+import { useState, useEffect } from "react";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Navbar from "@/components/ui/navbar";
+import Link from "next/link";
+import {
+  ImageDown,
+  FileBadge2,
+  Sprout,
+  Cctv,
+  MonitorCheck,
+  Router,
+  Network,
+  MonitorPlay,
+  Handshake,
+} from "lucide-react";
+import Banner from "@/components/ui/banner";
+import Partners from "@/components/Partners";
+import SocialLinks from "@/components/SocialLinks";
+import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import useIntersectionObserver from "@/components/UseIntersectionObser";
+
+const perks = [
+  {
+    name: "Inovative soliutions",
+    Icon: MonitorCheck,
+    description:
+      "At RILA we proud ourselves of staying up to date with new technologies and inovations.",
+  },
+  {
+    name: "Our Quality Guarantee",
+    Icon: FileBadge2,
+    description:
+      "Our expert team ensures guaranteed quality in every aspect of our services, delivering excellence that exceeds expectations. With their extensive experience and dedication, you can trust in the reliability and superiority of our solutions",
+  },
+  {
+    name: "Leading partnerships",
+    Icon: Handshake,
+    description:
+      "We collaborate with leading entities in the IT industry to deliver unparalleled reliability and instill a sense of tranquility.",
+  },
+];
 
 export default function Home() {
+  const bannerRef = useRef<HTMLDivElement | null>(null);
+  const partnersRef = useRef<HTMLDivElement | null>(null);
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+  const perksRef = useRef<HTMLDivElement | null>(null);
+
+  const sectionRefs = [bannerRef, partnersRef, aboutRef, perksRef];
+
+  useIntersectionObserver(sectionRefs, 0.5, true);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div ref={bannerRef} className="relative h-screen overflow-hidden">
+        <Banner />
+        <div className="relative z-30 flex flex-col items-center justify-center h-full py-20 mx-auto text-center max-w-3xl">
+          <MaxWidthWrapper>
+            <h2 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-6xl">
+              <span className="inline-block animate-fade-in-up-delay-0">
+                Elevating{" "}
+              </span>{" "}
+              <span className="text-violet-700 inline-block animate-fade-in-up-delay-1">
+                Connectivity<span className=" text-gray-700">, </span>
+              </span>{" "}
+              <span className="inline-block animate-fade-in-up-delay-2">
+                Simplifying{" "}
+              </span>{" "}
+              <span className="text-violet-700 inline-block animate-fade-in-up-delay-3">
+                IT<span className=" text-gray-700">. </span>
+              </span>
+            </h2>
+            <p className="mt-6 text-lg max-w-prose text-muted-foreground animate-fade-in-up-delay-3">
+              Welcome to London IT soliutions. Tailored IT and network solutions
+              for your home and business.
+            </p>
+            <div className="mt-6 flex justify-center items-center text-gray-700 text-2xl">
+              <SocialLinks />
+            </div>
+            <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-6">
+              <Button variant="ghost">Our services</Button>
+              <Link
+                href="/contact-us"
+                className={`${buttonVariants()} bg-violet-500 hover:bg-violet-800`}
+              >
+                Get a quote &rarr;
+              </Link>
+            </div>
+          </MaxWidthWrapper>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="relative z-30 bg-white">
+        <div ref={partnersRef}>
+          <Partners />
+        </div>
+
+        <div
+          className="bg-fixed inset-x-0 top-0 w-full h-screen  z-10 pt-20"
+          style={{
+            backgroundImage: `url('/images/athena.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          id="about"
+        >
+          <MaxWidthWrapper>
+            <div
+              ref={aboutRef}
+              className="md:py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-opacity-70 rounded-3xl bg-gray-700"
+            >
+              <h3 className="text-2xl py-10 font-bold tracking-tight text-white sm:text-6xl">
+                Professionals at work
+              </h3>
+
+              <h4 className="text-xl md:py-10  font-bold text-violet-700">
+                Welcome to a realm where expertise converges with innovation
+              </h4>
+
+              <p className=" text-white">
+                Embark on a transformative journey with RILA Enterprise. Our
+                seasoned professionals are devoted to exceeding your IT, AV,
+                networking, and CCTV requirements. Infused with a wealth of
+                experience and technical prowess, we seamlessly integrate
+                cutting-edge solutions tailored precisely to your business
+                needs. Whether it's intricate network setups, advanced
+                audiovisual installations, or robust CCTV systems, our dedicated
+                team at RILA Enterprise ensures excellence in every endeavor.
+                Navigating the digital landscape with passion, we empower your
+                business to thrive. Consider RILA Enterprise the architects of
+                your technological success, where professionalism is the
+                cornerstone of our commitment to delivering seamless and
+                innovative digital solutions.
+              </p>
+            </div>
+          </MaxWidthWrapper>
+        </div>
+        <section ref={perksRef} className="border-t border-b border-gray-200">
+          <MaxWidthWrapper className="py-20">
+            <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg-gap-y-0">
+              {perks.map((perk) => (
+                <div
+                  key={perk.name}
+                  className="text-center md:flex md:items-start md:text-left lg:block lg:text-center"
+                >
+                  <div className="md:flex-shrink-0 flex justify-center">
+                    <div className="h-16 w-16 flex items-center justify-center rounded-full bg-violet-100 text-violet-900">
+                      {<perk.Icon className="w-1/2 h-1/2" />}
+                    </div>
+                  </div>
+                  <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
+                    <h3 className="text-base font-medium text-gray-900">
+                      {perk.name}
+                    </h3>
+                    <p className="mt-3 text-sm text-muted-foreground">
+                      {perk.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </MaxWidthWrapper>
+        </section>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
