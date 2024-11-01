@@ -18,7 +18,7 @@ const Partners = () => {
     <div
       className="bg-fixed inset-0 w-full min-h-screen z-10"
       style={{
-        backgroundImage: `url('/images/london.jpg')`,
+        backgroundImage: `url('/images/gurkin.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -45,8 +45,8 @@ const Partners = () => {
                     <Image
                       src={partner.logoUrl}
                       alt={partner.name}
-                      width={200} 
-                      height={150} 
+                      width={200}
+                      height={150}
                       className="object-contain sm:w-24 sm:h-16 md:w-32 md:h-20 lg:w-48 lg:h-28"
                     />
                   </div>

@@ -27,7 +27,7 @@ const perks = [
     name: "Inovative soliutions",
     Icon: MonitorCheck,
     description:
-      "At RILA we proud ourselves of staying up to date with new technologies and inovations.",
+      "At London IT we proud ourselves of staying up to date with new technologies and inovations.",
   },
   {
     name: "Our Quality Guarantee",
@@ -101,7 +101,7 @@ export default function Home() {
         <div
           className="bg-fixed inset-x-0 top-0 w-full h-screen  z-10 pt-20"
           style={{
-            backgroundImage: `url('/images/athena.jpg')`,
+            backgroundImage: `url('/images/dell.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -110,13 +110,13 @@ export default function Home() {
           <MaxWidthWrapper>
             <div
               ref={aboutRef}
-              className="md:py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-opacity-70 rounded-3xl bg-gray-700"
+              className="md:py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-opacity-80 rounded-3xl bg-gray-700"
             >
               <h3 className="text-2xl py-10 font-bold tracking-tight text-white sm:text-6xl">
-                Professionals at work
+                <span className="text-violet-600">Professionals</span> at work
               </h3>
 
-              <h4 className="text-xl md:py-10  font-bold text-violet-700">
+              <h4 className="text-xl md:py-10  font-bold text-white">
                 Welcome to a realm where expertise converges with innovation
               </h4>
 
