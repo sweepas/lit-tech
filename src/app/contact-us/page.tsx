@@ -60,7 +60,7 @@ const ContactUs = () => {
       >
         <div className="flex flex-col items-center text-center p-4">
           <p className="text-lg md:text-xl text-white mb-4">
-            At London IT we believe that there is no such thing as stupid
+            At London IT we believe there&apos;s no such thing as stupid
             questions.
           </p>
           <button
@@ -82,7 +82,7 @@ const ContactUs = () => {
               <h2 className="text-2xl md:text-3xl font-bold">Get in Touch</h2>
               <p className="text-gray-700">
                 Feel free to contact us through the form or reach out directly.
-                We're here to assist you.
+                We&apos;re here to assist you.
               </p>
               <div>
                 <p className="text-lg">📞 +123 456 7890</p>

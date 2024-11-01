@@ -21,19 +21,20 @@ import SocialLinks from "@/components/SocialLinks";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
 import useIntersectionObserver from "@/components/UseIntersectionObser";
+import React from "react";
 
 const perks = [
   {
-    name: "Inovative soliutions",
+    name: "Innovative solutions",
     Icon: MonitorCheck,
     description:
-      "At London IT we proud ourselves of staying up to date with new technologies and inovations.",
+      "At London IT we pride ourselves on staying up to date with new technologies and innovations.",
   },
   {
     name: "Our Quality Guarantee",
     Icon: FileBadge2,
     description:
-      "Our expert team ensures guaranteed quality in every aspect of our services, delivering excellence that exceeds expectations. With their extensive experience and dedication, you can trust in the reliability and superiority of our solutions",
+      "Our expert team ensures guaranteed quality in every aspect of our services, delivering excellence that exceeds expectations. With their extensive experience and dedication, you can trust in the reliability and superiority of our solutions.",
   },
   {
     name: "Leading partnerships",
@@ -62,19 +63,19 @@ export default function Home() {
             <h2 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-6xl">
               <span className="inline-block animate-fade-in-up-delay-0">
                 Elevating{" "}
-              </span>{" "}
+              </span>
               <span className="text-violet-700 inline-block animate-fade-in-up-delay-1">
                 Connectivity<span className=" text-gray-700">, </span>
-              </span>{" "}
+              </span>
               <span className="inline-block animate-fade-in-up-delay-2">
                 Simplifying{" "}
-              </span>{" "}
+              </span>
               <span className="text-violet-700 inline-block animate-fade-in-up-delay-3">
                 IT<span className=" text-gray-700">. </span>
               </span>
             </h2>
             <p className="mt-6 text-lg max-w-prose text-muted-foreground animate-fade-in-up-delay-3">
-              Welcome to London IT soliutions. Tailored IT and network solutions
+              Welcome to London IT solutions. Tailored IT and network solutions
               for your home and business.
             </p>
             <div className="mt-6 flex justify-center items-center text-gray-700 text-2xl">
@@ -116,17 +117,17 @@ export default function Home() {
                 <span className="text-violet-600">Professionals</span> at work
               </h3>
 
-              <h4 className="text-xl md:py-10  font-bold text-white">
+              <h4 className="text-xl md:py-10 font-bold text-white">
                 Welcome to a realm where expertise converges with innovation
               </h4>
 
-              <p className=" text-white">
+              <p className="text-white">
                 Embark on a transformative journey with RILA Enterprise. Our
                 seasoned professionals are devoted to exceeding your IT, AV,
                 networking, and CCTV requirements. Infused with a wealth of
                 experience and technical prowess, we seamlessly integrate
                 cutting-edge solutions tailored precisely to your business
-                needs. Whether it's intricate network setups, advanced
+                needs. Whether it&apos;s intricate network setups, advanced
                 audiovisual installations, or robust CCTV systems, our dedicated
                 team at RILA Enterprise ensures excellence in every endeavor.
                 Navigating the digital landscape with passion, we empower your
@@ -138,6 +139,7 @@ export default function Home() {
             </div>
           </MaxWidthWrapper>
         </div>
+
         <section ref={perksRef} className="border-t border-b border-gray-200">
           <MaxWidthWrapper className="py-20">
             <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg-gap-y-0">
@@ -148,7 +150,9 @@ export default function Home() {
                 >
                   <div className="md:flex-shrink-0 flex justify-center">
                     <div className="h-16 w-16 flex items-center justify-center rounded-full bg-violet-100 text-violet-900">
-                      {<perk.Icon className="w-1/2 h-1/2" />}
+                      {React.createElement(perk.Icon, {
+                        className: "w-1/2 h-1/2",
+                      })}
                     </div>
                   </div>
                   <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
