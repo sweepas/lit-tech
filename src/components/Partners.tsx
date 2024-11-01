@@ -19,9 +19,9 @@ const Partners = () => {
       className="bg-fixed inset-0 w-full min-h-screen z-10"
       style={{
         backgroundImage: `url('/images/gurkin.jpg')`,
-        backgroundSize: "cover", // Ensures the background covers the area
-        backgroundPosition: "center", // Centers the image
-        backgroundRepeat: "no-repeat", // Prevents the image from repeating
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
       id="partners"
     >
