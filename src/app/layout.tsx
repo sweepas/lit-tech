@@ -1,3 +1,5 @@
+// src/app/layout.js
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,13 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
+        />
       </head>
       <body
         className={cn("relative h-full font-sans antialiased", inter.className)}
       >
         <Header />
-        <main className="flex-grow flex-1 ">{children}</main>
+        <main className="flex-grow flex-1">{children}</main>
         <Footer />
       </body>
     </html>
