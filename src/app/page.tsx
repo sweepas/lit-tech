@@ -62,16 +62,16 @@ export default function Home() {
           <MaxWidthWrapper>
             <h2 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-6xl">
               <span className="inline-block animate-fade-in-up-delay-0">
-                Elevating{" "}
+                Elevating&nbsp;
               </span>
               <span className="text-violet-700 inline-block animate-fade-in-up-delay-1">
-                Connectivity<span className=" text-gray-700">, </span>
+                Connectivity<span className=" text-gray-700">&nbsp;, </span>
               </span>
               <span className="inline-block animate-fade-in-up-delay-2">
-                Simplifying{" "}
+                Simplifying&nbsp;
               </span>
               <span className="text-violet-700 inline-block animate-fade-in-up-delay-3">
-                IT<span className=" text-gray-700">. </span>
+                IT<span className=" text-gray-700">.&nbsp;</span>
               </span>
             </h2>
             <p className="mt-6 text-lg max-w-prose text-muted-foreground animate-fade-in-up-delay-3">
