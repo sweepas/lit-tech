@@ -16,12 +16,12 @@ const partnersData = [
 const Partners = () => {
   return (
     <div
-      className="bg-fixed inset-0 w-full h-screen z-10 bg-partners"
+      className="bg-fixed inset-0 w-full min-h-screen z-10"
       style={{
         backgroundImage: `url('/images/gurkin.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover", // Ensures the background covers the area
+        backgroundPosition: "center", // Centers the image
+        backgroundRepeat: "no-repeat", // Prevents the image from repeating
       }}
       id="partners"
     >
