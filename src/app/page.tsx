@@ -65,7 +65,7 @@ export default function Home() {
                 Elevating&nbsp;
               </span>
               <span className="text-violet-700 inline-block animate-fade-in-up-delay-1">
-                Connectivity<span className=" text-gray-700">&nbsp;, </span>
+                Connectivity<span className=" text-gray-700">, &nbsp;</span>
               </span>
               <span className="inline-block animate-fade-in-up-delay-2">
                 Simplifying&nbsp;

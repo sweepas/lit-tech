@@ -16,7 +16,7 @@ const partnersData = [
 const Partners = () => {
   return (
     <div
-      className="bg-fixed inset-0 w-full min-h-screen z-10"
+      className="bg-fixed inset-0 w-full h-screen z-10"
       style={{
         backgroundImage: `url('/images/gurkin.jpg')`,
         backgroundSize: "cover",
@@ -28,7 +28,7 @@ const Partners = () => {
       <div className="relative flex items-center justify-center w-full h-full">
         <div className="relative w-full h-full">
           <MaxWidthWrapper>
-            <div className="relative z-50 flex flex-col items-center justify-center w-full h-full bg-opacity-80 bg-white p-8 rounded-3xl overflow-y-auto">
+            <div className="relative z-50 flex flex-col align-middle items-center justify-center w-full h-full bg-opacity-80 bg-white p-8 mt-5 lg:mt-20 rounded-3xl overflow-y-auto">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-700 text-center">
                 Our <span className="text-violet-700">Partners</span>
               </h1>
