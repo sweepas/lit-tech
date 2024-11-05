@@ -53,22 +53,25 @@ const ContactUs = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <div
-        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url('/images/contact-us.jpg')` }}
-      >
-        <div className="flex flex-col items-center text-center p-4">
-          <p className="text-lg md:text-xl text-white mb-4">
-            At London IT we believe there&apos;s no such thing as stupid
-            questions.
-          </p>
-          <button
-            onClick={scrollToContact}
-            className="text-white text-lg md:text-xl font-bold bg-gray-600 px-4 py-2 rounded-full shadow-lg hover:text-violet-500 transition"
-          >
-            Get in touch
-          </button>
+      {/* Background Container */}
+      <div className="relative h-screen">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url('/images/contact-us.jpg')` }}
+        />
+        <div className="relative flex items-center justify-center h-full">
+          <div className="flex flex-col items-center text-center p-4">
+            <p className="text-lg md:text-xl text-white mb-4">
+              At London IT we believe there&apos;s no such thing as stupid
+              questions.
+            </p>
+            <button
+              onClick={scrollToContact}
+              className="text-white text-lg md:text-xl font-bold bg-gray-600 px-4 py-2 rounded-full shadow-lg hover:text-violet-500 transition"
+            >
+              Get in touch
+            </button>
+          </div>
         </div>
       </div>
 
@@ -91,7 +94,7 @@ const ContactUs = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="w-full md:w-1/2 bg-gray-100 p-6 rounded-md shadow-lg">
+            <div className="w-full md:w-1/2 bg-white p-6 rounded-md shadow-lg">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
                 Contact Us
               </h2>
