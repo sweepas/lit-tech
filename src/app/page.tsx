@@ -100,7 +100,7 @@ export default function Home() {
         </div>
 
         <div
-          className="bg-fixed inset-x-0 top-0 w-full h-screen  z-10 pt-20"
+          className="bg-local inset-x-0 top-0 w-full h-screen  z-10 pt-20"
           style={{
             backgroundImage: `url('/images/dell.jpg')`,
             backgroundSize: "cover",
