@@ -96,9 +96,9 @@ export default function Home() {
       </div>
 
       <div className="relative z-30 bg-white">
-        {/* <div className="h-full z-40">
+        <div className="h-full z-40">
           <Services />
-        </div> */}
+        </div>
         <div ref={partnersRef}>
           <Partners />
         </div>

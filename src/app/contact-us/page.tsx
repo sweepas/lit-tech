@@ -55,7 +55,7 @@ const ContactUs = () => {
     <div>
       {/* Hero Section */}
       <div
-        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-local"
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url('/images/contact-us.jpg')` }}
       >
         <div className="flex flex-col items-center text-center p-4">
