@@ -22,6 +22,7 @@ import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
 import useIntersectionObserver from "@/components/UseIntersectionObser";
 import React from "react";
+import Services from "@/components/Services";
 
 const perks = [
   {
@@ -95,12 +96,15 @@ export default function Home() {
       </div>
 
       <div className="relative z-30 bg-white">
+        {/* <div className="h-full z-40">
+          <Services />
+        </div> */}
         <div ref={partnersRef}>
           <Partners />
         </div>
 
         <div
-          className="bg-local inset-x-0 top-0 w-full h-screen  z-10 pt-20"
+          className="bg-fixed bg-cover bg-center inset-x-0 top-0 w-full min-h-screen  z-10 pt-20"
           style={{
             backgroundImage: `url('/images/dell.jpg')`,
             backgroundSize: "cover",

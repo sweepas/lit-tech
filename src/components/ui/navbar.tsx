@@ -11,7 +11,7 @@ import { Separator } from "./separator";
 // Define an array of navigation items
 const navItems = [
   {
-    href: "/services",
+    href: "/#services",
     label: "Services",
     icon: <GrServices className="text-violet-700" />,
   },
