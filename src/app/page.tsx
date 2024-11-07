@@ -1,8 +1,5 @@
 "use client";
-import { useRef } from "react";
-import { useState, useEffect } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Navbar from "@/components/ui/navbar";
 import Link from "next/link";
 import {
   ImageDown,
@@ -20,7 +17,6 @@ import Partners from "@/components/Partners";
 import SocialLinks from "@/components/SocialLinks";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
-import useIntersectionObserver from "@/components/UseIntersectionObser";
 import React from "react";
 import Services from "@/components/Services";
 import OurCostumers from "@/components/OurCostumers";
@@ -47,18 +43,9 @@ const perks = [
 ];
 
 export default function Home() {
-  const bannerRef = useRef<HTMLDivElement | null>(null);
-  const partnersRef = useRef<HTMLDivElement | null>(null);
-  const aboutRef = useRef<HTMLDivElement | null>(null);
-  const perksRef = useRef<HTMLDivElement | null>(null);
-
-  const sectionRefs = [bannerRef, partnersRef, aboutRef, perksRef];
-
-  useIntersectionObserver(sectionRefs, 0.5, true);
-
   return (
     <>
-      <div ref={bannerRef} className="relative h-screen overflow-hidden">
+      <div className="relative h-screen overflow-hidden">
         <Banner />
         <div className="relative z-30 flex flex-col items-center justify-center h-full py-20 mx-auto text-center max-w-3xl">
           <MaxWidthWrapper>
@@ -100,11 +87,11 @@ export default function Home() {
         <div className="h-full z-40">
           <Services />
         </div>
-        <div ref={partnersRef}>
+        <div>
           <Partners />
         </div>
         <div>
-        <OurCostumers/>
+          <OurCostumers />
         </div>
         <div
           className="bg-local bg-cover bg-center inset-x-0 top-0 w-full min-h-screen  z-10 pt-20 md:bg-fixed"
@@ -116,10 +103,7 @@ export default function Home() {
           id="about"
         >
           <MaxWidthWrapper>
-            <div
-              ref={aboutRef}
-              className="md:py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-opacity-80 rounded-3xl bg-gray-700"
-            >
+            <div className="md:py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-opacity-80 rounded-3xl bg-gray-700">
               <h3 className="text-2xl py-10 font-bold tracking-tight text-white sm:text-6xl">
                 <span className="text-violet-600">Professionals</span> at work
               </h3>
@@ -147,7 +131,7 @@ export default function Home() {
           </MaxWidthWrapper>
         </div>
 
-        <section ref={perksRef} className="border-t border-b border-gray-200">
+        <section className="border-t border-b border-gray-200">
           <MaxWidthWrapper className="py-20">
             <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg-gap-y-0">
               {perks.map((perk) => (
