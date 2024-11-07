@@ -21,7 +21,7 @@ const navItems = [
     icon: <FaHandshake className="text-violet-700" />,
   },
   {
-    href: "/customers",
+    href: "/#customers",
     label: "Our Customers",
     icon: <RiTeamLine className="text-violet-700" />,
   },

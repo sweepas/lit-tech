@@ -68,7 +68,7 @@ const OurCustomers = () => {
   };
 
   return (
-    <div className="px-4 py-8 lg:px-16 lg:py-12 bg-gray-100">
+    <div className="px-4 py-8 lg:px-16 lg:py-12 bg-gray-100" id="costumers">
       <div className="text-center mb-8">
         <h1 className="font-bold text-2xl text-gray-700 tracking-tight lg:text-5xl lg:leading-tight">
           Who We <span className="text-violet-600">Work</span> With
