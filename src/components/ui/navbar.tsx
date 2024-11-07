@@ -8,7 +8,7 @@ import { RiTeamLine } from "react-icons/ri";
 import Image from "next/image";
 import { Separator } from "./separator";
 
-// Define an array of navigation items
+
 const navItems = [
   {
     href: "/#services",
@@ -84,7 +84,7 @@ const Navbar = ({ className }: { className?: string }) => {
                 width={24}
                 height={24}
                 className="cursor-pointer"
-                style={{ filter: "invert(1)" }} // Makes the icon white
+                style={{ filter: "invert(1)" }} 
               />
             </SheetTrigger>
             <SheetContent className="flex flex-col gap-6 bg-white backdrop-blur-md text-gray-700 py-6 px-4 rounded-lg">
@@ -96,7 +96,7 @@ const Navbar = ({ className }: { className?: string }) => {
                     <Link
                       href={href}
                       className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
-                      onClick={handleCloseSheet} // Close the sidebar on click
+                      onClick={handleCloseSheet} 
                     >
                       {label}
                     </Link>

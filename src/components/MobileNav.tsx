@@ -28,7 +28,7 @@ const MobileNav = (props: Props) => {
           <ul className="flex flex-col space-y-4">
             <li className="flex items-center gap-x-3">
               <Link
-                href="/services"
+                href="/#services"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
               >
                 Services
@@ -39,7 +39,7 @@ const MobileNav = (props: Props) => {
             </li>
             <li className="flex items-center gap-x-3">
               <Link
-                href="/partners"
+                href="/#partners"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
               >
                 Partners
@@ -50,7 +50,7 @@ const MobileNav = (props: Props) => {
             </li>
             <li className="flex items-center gap-x-3">
               <Link
-                href="/customers"
+                href="/#customers"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
               >
                 Our Customers
@@ -72,7 +72,7 @@ const MobileNav = (props: Props) => {
             </li>
             <li className="flex items-center gap-x-3">
               <Link
-                href="#about"
+                href="/#about"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
               >
                 About us
