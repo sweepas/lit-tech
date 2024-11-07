@@ -103,7 +103,7 @@ export default function Home() {
           id="about"
         >
           <MaxWidthWrapper>
-            <div className="md:py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-opacity-80 rounded-3xl bg-gray-700">
+            <div className="md:py-20 mx-auto p-10 flex flex-col items-center max-w-3xl bg-opacity-80 rounded-3xl bg-gray-700">
               <h3 className="text-2xl py-10 font-bold tracking-tight text-white sm:text-6xl">
                 <span className="text-violet-600">Professionals</span> at work
               </h3>
