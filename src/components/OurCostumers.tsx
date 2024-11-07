@@ -3,44 +3,9 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { customers } from "../app/data/data";
 
-const customers = [
-  {
-    name: "Restaurants",
-    description:
-      "LIT helps companies manage essential systems, modernize IT, optimize data, and ensure security across their operations. Trusted by top UK organizations, LIT boosts performance, competitiveness, and customer experience in IT.",
-    pictureUrl: "/images/restaurants.jpg",
-    link: "/costumers/restaurants",
-  },
-  {
-    name: "Co-Working Spaces",
-    description:
-      "LIT supports co-working spaces with streamlined management, advanced IT solutions, and secure data handling, enabling a productive and collaborative work environment.",
-    pictureUrl: "/images/co-working.jpg",
-    link: "/costumers/co-working-spaces",
-  },
-  {
-    name: "Retail",
-    description:
-      "Retailers trust LIT to manage their IT infrastructure, optimize data, and secure transactions, providing a seamless experience for customers and driving growth.",
-    pictureUrl: "/images/retail.jpg",
-    link: "/costumers/retail",
-  },
-  {
-    name: "Offices",
-    description:
-      "From IT modernization to data security, LIT helps office environments operate efficiently, ensuring seamless workflows and safeguarding critical data.",
-    pictureUrl: "/images/offices.jpg",
-    link: "/costumers/offices",
-  },
-  {
-    name: "Hotels",
-    description:
-      "LIT empowers hotels to deliver a superior guest experience with reliable IT solutions, optimized data management, and robust security measures.",
-    pictureUrl: "/images/hotels.jpg",
-    link: "/costumers/hotels",
-  },
-];
+
 
 const OurCustomers = () => {
   const settings = {

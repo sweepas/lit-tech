@@ -23,7 +23,9 @@ const MobileNav = (props: Props) => {
           />
         </SheetTrigger>
         <SheetContent className="flex flex-col gap-6 bg-white backdrop-blur-md text-gray-700 py-6 px-4 rounded-lg">
-          <h1 className="font-black text-gray-700">LondonIT</h1>
+          <Link href="/">
+            <h1 className="font-black text-gray-700">LondonIT</h1>
+          </Link>
           <Separator className="border border-gray-700" />
           <ul className="flex flex-col space-y-4">
             <li className="flex items-center gap-x-3">
