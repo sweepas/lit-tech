@@ -1,5 +1,6 @@
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import Image from "next/image";
 
 const services = [
   {
@@ -125,11 +126,13 @@ const Services = () => {
               >
                 <div className="flex items-center mb-4">
                   <div className="h-16 w-16 flex items-center justify-center rounded-full bg-violet-100 text-violet-900">
-                    <img
+                    <Image
                       loading="lazy"
                       src={service.icon}
                       alt={service.name}
                       className="h-10 w-10"
+                      width={40}
+                      height={40}
                     />
                   </div>
                   <h3 className="ml-4 text-size-medium-2 font-bold">

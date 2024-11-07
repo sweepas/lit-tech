@@ -81,11 +81,8 @@ const OurCustomers = () => {
 
       <Slider {...settings}>
         {customers.map((customer) => (
-          <div className="p-4">
-            <div
-              key={customer.name}
-              className="flex flex-col items-center bg-white rounded-lg shadow-md overflow-hidden p-4"
-            >
+          <div key={customer.name} className="p-4">
+            <div className="flex flex-col items-center bg-white rounded-lg shadow-md overflow-hidden p-4">
               <div className="relative w-full" style={{ height: "250px" }}>
                 <Image
                   src={customer.pictureUrl}
