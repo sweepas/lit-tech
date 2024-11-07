@@ -56,7 +56,7 @@ const ContactUs = () => {
       {/* Background Container */}
       <div className="relative h-screen">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          className="absolute inset-0 bg-cover bg-center bg-local md:bg-fixed"
           style={{ backgroundImage: `url('/images/contact-us.jpg')` }}
         />
         <div className="relative flex items-center justify-center h-full">

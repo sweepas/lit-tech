@@ -1,4 +1,5 @@
 import React from "react";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const services = [
   {
@@ -89,62 +90,69 @@ const services = [
 
 const Services = () => {
   return (
-    <div
-      id="services"
-      className="flex flex-col items-start px-4 py-8 lg:px-16 lg:py-12 bg-gray-100"
-    >
-      {/* Header Section */}
-      <div className="flex flex-col lg:flex-row w-full mb-8">
-        <div className="lg:w-1/2">
-          <h1 className="font-bold text-2xl text-gray-700 tracking-tight mb-4 lg:text-6xl lg:leading-tight">
-            We Got <span className="text-violet-600">IT</span> Sorted
-          </h1>
-        </div>
-        <div className="lg:w-1/2">
-          <p className="text-gray-700 lg:text-lg lg:leading-relaxed">
-            LIT helps companies manage their mission-critical systems and
-            operations while modernizing IT, optimizing data, and strengthening
-            security and scalability across their business. Trusted by some of
-            the UK’s most recognized companies and organizations, LIT drives
-            enhanced performance, competitiveness, and customer experience
-            throughout their IT environments. Discover how we deliver excellence
-            for our customers and team.
-          </p>
-        </div>
-      </div>
-
-      {/* Services Section */}
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 w-full">
-        {services.map((service) => (
-          <div key={service.name} className="bg-white rounded-lg shadow-md p-4">
-            <div className="flex items-center mb-4">
-              <div className="h-16 w-16 flex items-center justify-center rounded-full bg-violet-100 text-violet-900">
-                <img
-                  loading="lazy"
-                  src={service.icon}
-                  alt={service.name}
-                  className="h-10 w-10"
-                />
-              </div>
-              <h3 className="ml-4 text-size-medium-2 font-bold">
-                <strong>{service.name}</strong>
-              </h3>
+    <>
+      <MaxWidthWrapper>
+        <div
+          id="services"
+          className="flex flex-col items-start px-4 py-8 lg:px-16 lg:py-12 bg-gray-100"
+        >
+          {/* Header Section */}
+          <div className="flex flex-col lg:flex-row w-full mb-8">
+            <div className="lg:w-1/2">
+              <h1 className="font-bold text-2xl text-gray-700 tracking-tight mb-4 lg:text-6xl lg:leading-tight">
+                We Got <span className="text-violet-600">IT</span> Sorted
+              </h1>
             </div>
-            <div className="w-richtext">
-              <p>{service.description}</p>
-            </div>
-            <div className="mt-4">
-              <a
-                href={service.link}
-                className="button is-large blue w-inline-block"
-              >
-                <div>Learn more</div>
-              </a>
+            <div className="lg:w-1/2">
+              <p className="text-gray-700 lg:text-lg lg:leading-relaxed">
+                LIT helps companies manage their mission-critical systems and
+                operations while modernizing IT, optimizing data, and
+                strengthening security and scalability across their business.
+                Trusted by some of the UK’s most recognized companies and
+                organizations, LIT drives enhanced performance, competitiveness,
+                and customer experience throughout their IT environments.
+                Discover how we deliver excellence for our customers and team.
+              </p>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
+
+          {/* Services Section */}
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 w-full">
+            {services.map((service) => (
+              <div
+                key={service.name}
+                className="bg-white rounded-lg shadow-md p-4"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="h-16 w-16 flex items-center justify-center rounded-full bg-violet-100 text-violet-900">
+                    <img
+                      loading="lazy"
+                      src={service.icon}
+                      alt={service.name}
+                      className="h-10 w-10"
+                    />
+                  </div>
+                  <h3 className="ml-4 text-size-medium-2 font-bold">
+                    <strong>{service.name}</strong>
+                  </h3>
+                </div>
+                <div className="w-richtext">
+                  <p>{service.description}</p>
+                </div>
+                <div className="mt-4">
+                  <a
+                    href={service.link}
+                    className="button is-large blue w-inline-block"
+                  >
+                    <div>Learn more</div>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </MaxWidthWrapper>
+    </>
   );
 };
 export default Services;
