@@ -8,20 +8,19 @@ import { RiTeamLine } from "react-icons/ri";
 import Image from "next/image";
 import { Separator } from "./separator";
 
-
 const navItems = [
   {
-    href: "/#services",
+    href: "#services",
     label: "Services",
     icon: <GrServices className="text-violet-700" />,
   },
   {
-    href: "/#partners",
+    href: "#partners",
     label: "Partners",
     icon: <FaHandshake className="text-violet-700" />,
   },
   {
-    href: "/#customers",
+    href: "#customers",
     label: "Our Customers",
     icon: <RiTeamLine className="text-violet-700" />,
   },
@@ -31,7 +30,7 @@ const navItems = [
     icon: <FaBlog className="text-violet-700" />,
   },
   {
-    href: "/#about",
+    href: "#about",
     label: "About us",
     icon: <FaPeopleGroup className="text-violet-700" />,
   },
@@ -84,7 +83,7 @@ const Navbar = ({ className }: { className?: string }) => {
                 width={24}
                 height={24}
                 className="cursor-pointer"
-                style={{ filter: "invert(1)" }} 
+                style={{ filter: "invert(1)" }}
               />
             </SheetTrigger>
             <SheetContent className="flex flex-col gap-6 bg-white backdrop-blur-md text-gray-700 py-6 px-4 rounded-lg">
@@ -96,7 +95,7 @@ const Navbar = ({ className }: { className?: string }) => {
                     <Link
                       href={href}
                       className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
-                      onClick={handleCloseSheet} 
+                      onClick={handleCloseSheet}
                     >
                       {label}
                     </Link>

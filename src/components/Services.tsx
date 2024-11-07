@@ -135,7 +135,7 @@ const Services = () => {
                       height={40}
                     />
                   </div>
-                  <h3 className="ml-4 text-size-medium-2 font-bold">
+                  <h3 className="ml-4 text-size-medium-2 font-bold  text-gray-700 ">
                     <strong>{service.name}</strong>
                   </h3>
                 </div>
@@ -145,9 +145,9 @@ const Services = () => {
                 <div className="mt-4">
                   <a
                     href={service.link}
-                    className="button is-large blue w-inline-block"
+                    className="inline-block mt-4 bg-violet-500 text-white px-4 py-2 rounded-lg hover:bg-violet-700 transition"
                   >
-                    <div>Learn more</div>
+                    <a>Learn more</a>
                   </a>
                 </div>
               </div>
