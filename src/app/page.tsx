@@ -76,7 +76,7 @@ export default function Home() {
                 href="/contact-us"
                 className={`${buttonVariants()} bg-violet-500 hover:bg-violet-800`}
               >
-                Get a quote &rarr;
+                Get in touch &rarr;
               </Link>
             </div>
           </MaxWidthWrapper>

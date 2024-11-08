@@ -3,7 +3,6 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import ServiceCard from "./ServiceCard";
 import { services } from "../app/data/data";
 
-
 const Services = () => {
   return (
     <>
@@ -16,7 +15,7 @@ const Services = () => {
           <div className="flex flex-col lg:flex-row w-full mb-8">
             <div className="lg:w-1/2">
               <h1 className="font-bold text-2xl text-gray-700 tracking-tight mb-4 lg:text-6xl lg:leading-tight">
-                We Got <span className="text-violet-600">IT</span> Sorted
+                What We <span className="text-violet-600">Do</span>
               </h1>
             </div>
             <div className="lg:w-1/2">
@@ -32,12 +31,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Services Section */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 w-full">
-            {services.map((service) => (
-              <ServiceCard key={service.name} service={service} />
-            ))}
-          </div>
+          <ServiceCard />
         </div>
       </MaxWidthWrapper>
     </>

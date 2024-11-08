@@ -85,40 +85,51 @@ export const services = [
     },
   ];
 
- export const customers = [
+  export const customers = [
     {
       name: "Restaurants",
-      description:
-        "LIT helps companies manage essential systems, modernize IT, optimize data, and ensure security across their operations. Trusted by top UK organizations, LIT boosts performance, competitiveness, and customer experience in IT.",
+      slug: "restaurants",
+      description: 
+        "LIT helps restaurants streamline their operations by managing essential systems, modernizing IT infrastructure, and optimizing data flow. Their solutions ensure that restaurants stay ahead of the curve with innovative technology and provide top-notch security across all operations. Trusted by leading restaurants in the UK, LIT’s services boost performance, enhance customer experiences, and improve overall competitiveness. With tailored solutions for the food service industry, LIT ensures that every aspect of a restaurant’s operations, from point-of-sale systems to back-office management, is optimized for efficiency and security.",
       pictureUrl: "/images/restaurants.jpg",
-      link: "/costumers/restaurants",
+      link: "/customers/restaurants",
+      services: ["Data Management", "Security", "Customer Experience"],
     },
     {
       name: "Co-Working Spaces",
-      description:
-        "LIT supports co-working spaces with streamlined management, advanced IT solutions, and secure data handling, enabling a productive and collaborative work environment.",
+      slug: "co-working-spaces",
+      description: 
+        "LIT offers specialized support to co-working spaces, enabling them to run smoothly with cutting-edge IT solutions. By optimizing network management and implementing robust data security measures, LIT ensures that members enjoy a secure and productive environment. With a focus on streamlining management processes, LIT enables co-working spaces to focus on growing their community and fostering collaboration, rather than on complex IT issues. LIT’s services help these spaces remain flexible, scalable, and secure, allowing business owners and freelancers alike to thrive in a connected world.",
       pictureUrl: "/images/co-working.jpg",
-      link: "/costumers/co-working-spaces",
+      link: "/customers/co-working-spaces",
+      services: ["Network Management", "Data Security", "IT Support"],
     },
     {
       name: "Retail",
-      description:
-        "Retailers trust LIT to manage their IT infrastructure, optimize data, and secure transactions, providing a seamless experience for customers and driving growth.",
+      slug: "retail",
+      description: 
+        "Retail businesses trust LIT to manage their IT infrastructure, optimize critical data, and secure financial transactions. By integrating advanced technologies, LIT empowers retailers to provide a seamless customer experience, whether online or in-store. From streamlining inventory management to improving customer service and engagement, LIT ensures that all tech-driven aspects of a retail business operate smoothly. Furthermore, LIT’s cybersecurity solutions protect sensitive customer and transaction data, allowing retailers to focus on growth while maintaining robust security and compliance standards.",
       pictureUrl: "/images/retail.jpg",
-      link: "/costumers/retail",
+      link: "/customers/retail",
+      services: ["IT Infrastructure", "Data Optimization", "Transaction Security"],
     },
     {
       name: "Offices",
-      description:
-        "From IT modernization to data security, LIT helps office environments operate efficiently, ensuring seamless workflows and safeguarding critical data.",
+      slug: "offices",
+      description: 
+        "LIT assists office environments in achieving operational efficiency through IT modernization, network management, and advanced data security. Their comprehensive solutions ensure seamless workflows and the secure handling of critical data, allowing businesses to function smoothly and focus on their core operations. Whether it’s upgrading office technologies, safeguarding sensitive data, or optimizing internal communications, LIT provides tailored services that meet the unique needs of office spaces. LIT helps organizations stay productive by providing reliable IT infrastructure that scales with business growth, ensuring businesses remain efficient and secure in an increasingly digital world.",
       pictureUrl: "/images/offices.jpg",
-      link: "/costumers/offices",
+      link: "/customers/offices",
+      services: ["Workflow Management", "Data Safeguarding", "IT Modernization"],
     },
     {
       name: "Hotels",
-      description:
-        "LIT empowers hotels to deliver a superior guest experience with reliable IT solutions, optimized data management, and robust security measures.",
+      slug: "hotels",
+      description: 
+        "LIT empowers hotels to provide an exceptional guest experience with reliable, state-of-the-art IT solutions. From guest management systems to data optimization and security, LIT delivers services that ensure hotels operate efficiently while providing guests with the comfort and convenience they expect. With LIT’s secure data management solutions, hotels can keep guest information safe while improving operational efficiency. Whether it’s streamlining booking systems, enhancing communication between staff and guests, or optimizing in-room technology, LIT’s solutions help hotels create memorable, tech-savvy experiences for guests while ensuring smooth day-to-day operations.",
       pictureUrl: "/images/hotels.jpg",
-      link: "/costumers/hotels",
+      link: "/customers/hotels",
+      services: ["Guest Management", "IT Solutions", "Data Management"],
     },
   ];
+  
