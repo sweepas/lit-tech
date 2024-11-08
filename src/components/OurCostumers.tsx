@@ -31,7 +31,7 @@ const OurCustomers = () => {
   };
 
   return (
-    <div className="px-4 py-16 lg:px-16 lg:py-12 bg-gray-100" id="customers">
+    <div className="px-4 py-20 lg:px-16 lg:py-12 bg-gray-100" id="customers">
       <div className="text-center mb-8">
         <h1 className="font-bold text-2xl text-gray-700 tracking-tight lg:text-5xl lg:leading-tight">
           Who We <span className="text-violet-600">Work</span> With
@@ -46,17 +46,17 @@ const OurCustomers = () => {
         {customers.map((customer) => (
           <div key={customer.name} className="p-4">
             <div className="flex flex-col items-center bg-white rounded-lg shadow-md overflow-hidden p-4">
-              <div className="relative w-full" style={{ height: "250px" }}>
+              <div
+                className="relative w-full mb-4"
+                style={{ height: "0", paddingBottom: "60%" }}
+              >
+                {/* Aspect ratio box */}
                 <Image
                   src={customer.pictureUrl}
                   alt={customer.name}
-                  className="absolute inset-0"
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "center",
-                  }}
-                  width={500}
-                  height={400}
+                  className="absolute inset-0 object-cover w-full h-full"
+                  layout="fill"
+                  objectFit="cover" // Use object-fit for coverage of the box without distortion
                 />
               </div>
 

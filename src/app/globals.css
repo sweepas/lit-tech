@@ -77,7 +77,21 @@
     --chart-5: 340 75% 55%;
   }
 }
+@layer components {
+  .slick-prev, .slick-next {
+    color: #5F4B8B; 
+    font-size: 24px; 
+    z-index: 10; 
+  }
 
+  .slick-prev:hover, .slick-next:hover {
+    color: #6D4C9C; 
+  }
+
+  .slick-prev:before, .slick-next:before {
+    content: ""; 
+  }
+}
 @layer base {
   * {
     @apply border-border;

@@ -30,8 +30,8 @@ const MobileNav = (props: Props) => {
           <ul className="flex flex-col space-y-4">
             <li className="flex items-center gap-x-3">
               <Link
-                href="#services"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
+                href="/#services"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Services
               </Link>
@@ -42,7 +42,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#partners"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Partners
               </Link>
@@ -53,7 +53,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#customers"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Our Customers
               </Link>
@@ -64,7 +64,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/blog"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Blog
               </Link>
@@ -75,7 +75,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#about"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 About us
               </Link>

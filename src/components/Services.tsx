@@ -9,7 +9,7 @@ const Services = () => {
       <MaxWidthWrapper>
         <div
           id="services"
-          className="flex flex-col items-start px-4 py-8 lg:px-16 lg:py-12 bg-gray-100"
+          className="flex flex-col items-start px-4 py-20 lg:px-16 lg:py-20 bg-gray-100"
         >
           {/* Header Section */}
           <div className="flex flex-col lg:flex-row w-full mb-8">
