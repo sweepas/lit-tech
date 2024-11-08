@@ -29,56 +29,56 @@ const MobileNav = (props: Props) => {
           <Separator className="border border-gray-700" />
           <ul className="flex flex-col space-y-4">
             <li className="flex items-center gap-x-3">
-              <Link
+              <a
                 href="/#services"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Services
-              </Link>
+              </a>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <GrServices className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <Link
+              <a
                 href="/#partners"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Partners
-              </Link>
+              </a>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <FaHandshake className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <Link
+              <a
                 href="/#customers"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Our Customers
-              </Link>
+              </a>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <RiTeamLine className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <Link
+              <a
                 href="/blog"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Blog
-              </Link>
+              </a>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <FaBlog className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <Link
+              <a
                 href="/#about"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 About us
-              </Link>
+              </a>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <FaPeopleGroup className="text-violet-700" />
               </div>
