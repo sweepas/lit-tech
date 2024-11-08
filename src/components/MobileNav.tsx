@@ -22,63 +22,63 @@ const MobileNav = (props: Props) => {
             className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent className="flex flex-col gap-6 bg-white backdrop-blur-md text-gray-700 py-6 px-4 rounded-lg">
-          <Link href="/">
+        <SheetContent className="flex flex-col gap-6 bg-white backdrop-blur-md text-gray-700 py-6 px-4 rounded-lg z-50">
+          <Link href="/" className="z-50">
             <h1 className="font-black text-gray-700">LondonIT</h1>
           </Link>
           <Separator className="border border-gray-700" />
           <ul className="flex flex-col space-y-4">
             <li className="flex items-center gap-x-3">
-              <a
+              <Link
                 href="/#services"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Services
-              </a>
+              </Link>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <GrServices className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <a
+              <Link
                 href="/#partners"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Partners
-              </a>
+              </Link>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <FaHandshake className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <a
+              <Link
                 href="/#customers"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Our Customers
-              </a>
+              </Link>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <RiTeamLine className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <a
+              <Link
                 href="/blog"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Blog
-              </a>
+              </Link>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <FaBlog className="text-violet-700" />
               </div>
             </li>
             <li className="flex items-center gap-x-3">
-              <a
+              <Link
                 href="/#about"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 About us
-              </a>
+              </Link>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                 <FaPeopleGroup className="text-violet-700" />
               </div>
