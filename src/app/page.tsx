@@ -113,19 +113,18 @@ export default function Home() {
               </h4>
 
               <p className="text-white">
-                Embark on a transformative journey with RILA Enterprise. Our
-                seasoned professionals are devoted to exceeding your IT, AV,
-                networking, and CCTV requirements. Infused with a wealth of
-                experience and technical prowess, we seamlessly integrate
-                cutting-edge solutions tailored precisely to your business
-                needs. Whether it&apos;s intricate network setups, advanced
-                audiovisual installations, or robust CCTV systems, our dedicated
-                team at RILA Enterprise ensures excellence in every endeavor.
-                Navigating the digital landscape with passion, we empower your
-                business to thrive. Consider RILA Enterprise the architects of
-                your technological success, where professionalism is the
-                cornerstone of our commitment to delivering seamless and
-                innovative digital solutions.
+                Embark on a transformative journey with LIT. Our seasoned
+                professionals are devoted to exceeding your IT, AV, networking,
+                and CCTV requirements. Infused with a wealth of experience and
+                technical prowess, we seamlessly integrate cutting-edge
+                solutions tailored precisely to your business needs. Whether
+                it's intricate network setups, advanced audiovisual
+                installations, or robust CCTV systems, our dedicated team at LIT
+                ensures excellence in every endeavor. Navigating the digital
+                landscape with passion, we empower your business to thrive.
+                Consider LIT the architects of your technological success, where
+                professionalism is the cornerstone of our commitment to
+                delivering seamless and innovative digital solutions.
               </p>
             </div>
           </MaxWidthWrapper>
