@@ -11,7 +11,7 @@ type Props = {};
 
 const MobileNav = (props: Props) => {
   return (
-    <nav className="md:hidden ">
+    <nav className="md:hidden">
       <Sheet>
         <SheetTrigger className="align-middle">
           <Image
@@ -23,7 +23,7 @@ const MobileNav = (props: Props) => {
           />
         </SheetTrigger>
         <SheetContent className="flex flex-col gap-6 bg-white backdrop-blur-md text-gray-700 py-6 px-4 rounded-lg z-50">
-          <Link href="/" className="z-50">
+          <Link href="/" aria-label="Home" className="z-50">
             <h1 className="font-black text-gray-700">LondonIT</h1>
           </Link>
           <Separator className="border border-gray-700" />
@@ -31,6 +31,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#services"
+                aria-label="Services"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Services
@@ -42,6 +43,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#partners"
+                aria-label="Partners"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Partners
@@ -53,6 +55,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#customers"
+                aria-label="Our Customers"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Our Customers
@@ -64,6 +67,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/blog"
+                aria-label="Blog"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 Blog
@@ -75,6 +79,7 @@ const MobileNav = (props: Props) => {
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#about"
+                aria-label="About Us"
                 className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
               >
                 About us
