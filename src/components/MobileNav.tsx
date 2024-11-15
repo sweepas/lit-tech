@@ -13,7 +13,7 @@ const MobileNav = (props: Props) => {
   return (
     <nav className="md:hidden">
       <Sheet>
-        <SheetTrigger className="align-middle">
+        <SheetTrigger className="align-middle z-50">
           <Image
             src="/images/menu.svg"
             alt="menu"
@@ -32,7 +32,7 @@ const MobileNav = (props: Props) => {
               <Link
                 href="/#services"
                 aria-label="Services"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Services
               </Link>
@@ -44,7 +44,7 @@ const MobileNav = (props: Props) => {
               <Link
                 href="/#partners"
                 aria-label="Partners"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Partners
               </Link>
@@ -56,7 +56,7 @@ const MobileNav = (props: Props) => {
               <Link
                 href="/#customers"
                 aria-label="Our Customers"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Our Customers
               </Link>
@@ -68,7 +68,7 @@ const MobileNav = (props: Props) => {
               <Link
                 href="/blog"
                 aria-label="Blog"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 Blog
               </Link>
@@ -80,7 +80,7 @@ const MobileNav = (props: Props) => {
               <Link
                 href="/#about"
                 aria-label="About Us"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer z-50"
+                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
               >
                 About us
               </Link>
