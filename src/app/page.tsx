@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative z-30 bg-white">
+      <div className="relative z-30 bg-white overflow-hidden">
         <div className="h-full z-40">
           <Services />
         </div>
