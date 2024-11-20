@@ -92,13 +92,13 @@ const Navbar = ({ className }: { className?: string }) => {
               <ul className="flex flex-col space-y-4">
                 {navItems.map(({ href, label, icon }) => (
                   <li key={href} className="flex items-center gap-x-3">
-                    <Link
+                    <a
                       href={href}
                       className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center"
                       onClick={handleCloseSheet}
                     >
                       {label}
-                    </Link>
+                    </a>
                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
                       {icon}
                     </div>
