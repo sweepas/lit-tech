@@ -28,19 +28,6 @@ const MobileNav = (props: Props) => {
           </Link>
           <Separator className="border border-gray-700" />
           <ul className="flex flex-col space-y-4">
-            {/* Home Link */}
-            <li className="flex items-center gap-x-3">
-              <Link
-                href="/"
-                aria-label="Home"
-                className="text-gray-700 hover:text-violet-700 transition duration-300 flex items-center cursor-pointer"
-              >
-                Home
-              </Link>
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-violet-100">
-                {/* Add an icon for Home if needed */}
-              </div>
-            </li>
             <li className="flex items-center gap-x-3">
               <Link
                 href="/#services"
