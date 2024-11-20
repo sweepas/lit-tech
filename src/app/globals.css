@@ -80,6 +80,7 @@
     --chart-5: 340 75% 55%;
   }
 }
+
 @layer components {
   .slick-prev,
   .slick-next {
@@ -98,6 +99,7 @@
     content: "";
   }
 }
+
 @layer base {
   * {
     @apply border-border;
