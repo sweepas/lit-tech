@@ -73,9 +73,9 @@ const Navbar = ({ className }: { className?: string }) => {
             </Link>
           ))}
         </div>
-
+        <MobileNav />
         {/* Mobile Menu */}
-        <nav className="md:hidden">
+        {/* <nav className="md:hidden">
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger className="align-middle">
               <Image
@@ -108,7 +108,7 @@ const Navbar = ({ className }: { className?: string }) => {
               </ul>
             </SheetContent>
           </Sheet>
-        </nav>
+        </nav> */}
       </nav>
     </div>
   );
