@@ -60,6 +60,7 @@ const OurCustomers = () => {
                   className="absolute inset-0 object-cover w-full h-full"
                   layout="fill"
                   objectFit="cover"
+                  // loading="lazy"
                 />
               </div>
 

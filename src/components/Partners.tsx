@@ -16,7 +16,7 @@ const partnersData = [
 const Partners = () => {
   return (
     <div
-      className="bg-local bg-cover bg-center inset-0 w-full h-screen py-8 z-10 md:bg-fixed"
+      className="bg-cover bg-center inset-0 w-full h-screen py-8 z-10 bg-fixed"
       style={{
         backgroundImage: `url('/images/gurkin.jpg')`,
       }}

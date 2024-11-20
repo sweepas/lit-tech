@@ -56,7 +56,9 @@ const Navbar = ({ className }: { className?: string }) => {
       >
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
-          <h1 className="font-black text-lg text-white">LondonIT</h1>
+          <h1 className="font-black text-lg text-white">
+            London<span className="text-violet-700">IT</span>
+          </h1>
         </Link>
 
         {/* Desktop Navigation - Centered Links */}
