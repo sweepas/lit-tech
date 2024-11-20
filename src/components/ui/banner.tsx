@@ -11,6 +11,8 @@ const Banner = (props: Props) => {
         autoPlay
         muted
         loop
+        playsInline
+        preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ pointerEvents: "none" }}
       ></video>

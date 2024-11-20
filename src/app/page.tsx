@@ -71,7 +71,9 @@ export default function Home() {
               <SocialLinks />
             </div>
             <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-6">
-              <Button variant="ghost">Our services</Button>
+              <Link href="/#services">
+                <Button variant="ghost">Our Services</Button>
+              </Link>
               <Link
                 href="/contact-us"
                 className={`${buttonVariants()} bg-violet-500 hover:bg-violet-800`}
