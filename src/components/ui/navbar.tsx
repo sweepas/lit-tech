@@ -7,7 +7,6 @@ import { FaHandshake, FaPeopleGroup, FaBlog } from "react-icons/fa6";
 import { RiTeamLine } from "react-icons/ri";
 import Image from "next/image";
 import { Separator } from "./separator";
-import MobileNav from "../MobileNav";
 
 const navItems = [
   {

@@ -18,7 +18,10 @@
 
 @layer utilities {
   .text-balance {
-    white-space:nowrap;
+    white-space: nowrap;
+  }
+  html {
+    scroll-behavior: smooth;
   }
 }
 
@@ -78,18 +81,21 @@
   }
 }
 @layer components {
-  .slick-prev, .slick-next {
-    color: #5F4B8B; 
-    font-size: 24px; 
-    z-index: 10; 
+  .slick-prev,
+  .slick-next {
+    color: #5f4b8b;
+    font-size: 24px;
+    z-index: 10;
   }
 
-  .slick-prev:hover, .slick-next:hover {
-    color: #6D4C9C; 
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #6d4c9c;
   }
 
-  .slick-prev:before, .slick-next:before {
-    content: ""; 
+  .slick-prev:before,
+  .slick-next:before {
+    content: "";
   }
 }
 @layer base {
